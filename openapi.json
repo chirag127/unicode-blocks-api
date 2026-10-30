@@ -1,0 +1,55 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "Unicode Blocks",
+    "description": "Unicode blocks with ranges, script, and character counts",
+    "version": "1.0.0",
+    "license": {
+      "name": "Unicode-DFS-2.1"
+    }
+  },
+  "servers": [
+    {
+      "url": "https://chirag127.github.io/unicode-blocks",
+      "description": "GitHub Pages"
+    }
+  ],
+  "paths": {
+    "/data.json": {
+      "get": {
+        "summary": "Unicode Blocks data",
+        "description": "Unicode blocks with ranges, script, and character counts",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/data/blocks": {
+      "get": {
+        "summary": "Unicode Blocks",
+        "description": "Unicode blocks with ranges, script, and character counts",
+        "responses": {
+          "200": {
+            "description": "JSON response",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
